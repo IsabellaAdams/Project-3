@@ -1,0 +1,8 @@
+<h3>Candle Details</h3>
+
+<div *ngIf="currentCandle">
+  <h3>{{ currentCandle.name }}</h3>
+  <h4>{{ currentCandle.price | currency }}</h4>
+  <p>{{ currentCandle.description }}</p>
+  <button type="button" (click)="addToCart(currentCandle)">Add to cart</button>
+</div>

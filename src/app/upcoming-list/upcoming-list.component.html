@@ -1,0 +1,15 @@
+<h4>Upcoming Prodcuts</h4>
+<h2>Here are some of our prdocuts that will be for sale soon!</h2>
+<div *ngFor="let upcomingProducts of upcomingProducts">
+  <h2>
+    <a [title]="upcomingProducts.name">
+      {{ upcomingProducts.name }}
+    </a>
+  </h2>
+
+  <button (click)="showInfo(upcomingProducts)">Product Details</button>
+  <app-alerts
+    [upcomingProducts]="upcomingProducts"
+    (notify)="onNotify()"
+  ></app-alerts>
+</div>

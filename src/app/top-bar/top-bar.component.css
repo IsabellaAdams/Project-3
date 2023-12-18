@@ -1,0 +1,8 @@
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  margin: 30px;
+  border-radius: 2px;
+}

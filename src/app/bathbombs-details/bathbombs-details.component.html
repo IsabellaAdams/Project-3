@@ -1,0 +1,10 @@
+<h3>Bath Bomb Details</h3>
+
+<div *ngIf="currentBathbomb">
+  <h3>{{ currentBathbomb.name }}</h3>
+  <h4>{{ currentBathbomb.price | currency }}</h4>
+  <p>{{ currentBathbomb.description }}</p>
+  <button type="button" (click)="addToCart(currentBathbomb)">
+    Add to cart
+  </button>
+</div>

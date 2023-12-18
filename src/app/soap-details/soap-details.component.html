@@ -1,0 +1,8 @@
+<h3>Soap Details</h3>
+
+<div *ngIf="currentSoap">
+  <h3>{{ currentSoap.name }}</h3>
+  <h4>{{ currentSoap.price | currency }}</h4>
+  <p>{{ currentSoap.description }}</p>
+  <button type="button" (click)="addToCart(currentSoap)">Add to cart</button>
+</div>

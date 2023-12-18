@@ -1,0 +1,18 @@
+[
+  {
+    "type": "2-Day Shipping",
+    "price": 22.99
+  },
+  {
+    "type": "Priority Mail",
+    "price": 9.99
+  },
+  {
+    "type": "Standard Postage",
+    "price": 4.99
+  },
+  {
+    "type": "Package Tracking",
+    "price": 2.99
+  }
+]

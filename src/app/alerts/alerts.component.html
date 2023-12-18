@@ -1,0 +1,3 @@
+<p *ngIf="upcomingProducts && upcomingProducts.releaseDay < 5">
+  <button type="button" (click)="notify.emit()">Save The Date</button>
+</p>

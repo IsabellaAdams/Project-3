@@ -1,0 +1,17 @@
+<h3>Candles</h3>
+<div *ngFor="let currentCandles of currentCandles">
+  <h2>
+    <a
+      [title]="currentCandles.name"
+      [routerLink]="['/currentCandles', currentCandles.id]"
+    >
+      {{ currentCandles.name }}
+    </a>
+  </h2>
+
+  <p *ngIf="currentCandles.description">
+    {{ currentCandles.description }}
+  </p>
+
+  <p *ngIf="currentCandles.price">${{ currentCandles.price }}</p>
+</div>
